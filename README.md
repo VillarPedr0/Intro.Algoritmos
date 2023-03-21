@@ -6,7 +6,7 @@ cursada en FAMAF.
 
 ----
 ## Guia 1
-El objetivo de esta guía es brindar una introducción al formalismo b´asico que se utilizará en la materia.
+El objetivo de esta guía es brindar una introducción al formalismo básico que se utilizará en la materia.
 Introduciremos los conceptos principales involucrados apoyándonos en un terreno conocido como es la aritmética.
-Definimos expresiones y f´ormulas aritméticas,funciones; y trabajamos con los conceptos de precedencia, tipado, 
+Definimos expresiones y fórmulas aritméticas, funciones; y trabajamos con los conceptos de precedencia, tipado, 
 evaluación de expresiones, casos.
