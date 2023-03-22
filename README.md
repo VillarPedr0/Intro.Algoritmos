@@ -1,32 +1,57 @@
-<a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+# Prácticos Haskell
 
-<h3 align="center">Prácticos Haskell</h3>
+Guia de ejercicios resueltos de Haskell, provenientes de la materia Introduccion a los Algoritmos de la carrera Ciencias de la Computación cursada en FAMAF.
 
-  <p align="center">
-    Guia de ejercicios resueltos de Haskell, provenientes de la materia Introduccion a los Algoritmos de la carrera Ciencias de la Computación cursada en FAMAF.
-    <br />
-    <a href="https://github.com/VillarPedr0/Haskell-Ejercicios"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    ·
-    <a href="https://github.com/VillarPedr0/Haskell-Ejercicios/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/VillarPedr0/Haskell-Ejercicios/issues">Request Feature</a>
-  </p>
-</div>
 
-### Built With
+## Run Locally
 
-* [![Haskell][Haskell.hs]][Haskell-url]
+Clone the project
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+  git clone https://github.com/VillarPedr0/Haskell-Ejercicios
+```
 
-[Haskell.hs]: 
-[Haskell-url]: https://www.haskell.org/
+Go to the project directory
+
+```bash
+  cd Haskell-Ejercicios
+```
+
+Install dependencies in Windows
+
+```bash
+  Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true } catch { Write-Error $_ }
+```
+
+Start GHCI
+
+```bash
+  ghci
+```
+
+Run the programm
+
+```bash
+  :l practicos.hs
+```
+
+
+## Usage/Examples
+
+```haskell
+-- En consola ejecutar: 
+esMultiplo <numero1> <numero2>
+
+-- Esto ejecutará la siguiente función
+esMultiplo :: Integral a => a -> a -> Bool
+esMultiplo x y | y `mod` x == 0 = True
+               | otherwise = False
+
+```
+
+
+## Authors
+
+- [@VillarPedr0](https://github.com/VillarPedr0)
+
