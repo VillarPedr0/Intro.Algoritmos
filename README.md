@@ -6,40 +6,40 @@
 Guia de ejercicios resueltos de Haskell, provenientes de la materia Introduccion a los Algoritmos de la carrera Ciencias de la Computación cursada en FAMAF.
 
 
-## Run Locally
+## Ejecución de forma local
 
-Clone the project
+Clonar el repositorio
 
 ```bash
   git clone https://github.com/VillarPedr0/Haskell-Ejercicios
 ```
 
-Go to the project directory
+Ir a la carpeta raíz
 
 ```bash
   cd Haskell-Ejercicios
 ```
 
-Install dependencies in Windows
+Instalación de dependencias en Windows
 
 ```bash
   Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true } catch { Write-Error $_ }
 ```
 
-Start GHCI
+Llamar a GHCI
 
 ```bash
   ghci
 ```
 
-Run the programm
+Correr el programa
 
 ```bash
   :l practicos.hs
 ```
 
 
-## Usage/Examples
+## Ejemplos de Uso
 
 ```haskell
 -- En consola ejecutar: 
@@ -53,7 +53,7 @@ esMultiplo x y | y `mod` x == 0 = True
 ```
 
 
-## Authors
+## Autor
 
 - [@VillarPedr0](https://github.com/VillarPedr0)
 
