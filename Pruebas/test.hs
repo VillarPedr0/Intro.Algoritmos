@@ -20,12 +20,3 @@ fibn n = fibs !! n
     fibs = 0 : 1 : map f [2..]
     f n = fibs !! (n-1) + fibs !! (n-2)
 
---tipo de dato con :t + dato, devuelve por consola el tipo de dato del valor dado
-
--- funcion que multiplica por dos
-multiplicaDos x = x + x
-
--- multiplica por dos solo lso menores o iguales a 100 y les suma 1
-doubleSmallNumber x = if x > 100 then x else x*2
-
-boomBang xs = [ if x < 20 then "Boom!!" else "Bang!!" | x <- xs, odd x ]
