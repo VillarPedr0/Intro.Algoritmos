@@ -129,14 +129,14 @@ rev (x:xs) = rev xs ++ [x]
 -- 8. Definí recursivamente los operadores básicos de listas: length, !!, take, drop, ++. Para los operadores
 --take y drop deberás hacer recursión en ambos parámetros, en el parámetro lista y en el parámetro
 --numérico.
-largo :: [a] -> Int
-largo [] = 0
-largo (_:xs) = 1 + largo xs
+length' :: [a] -> Int
+length' [] = 0
+length' (_:xs) = 1 + largo xs
 
-ee :: [a] -> Int -> Maybe a
-ee [] _ = Nothing
-ee (x:_) 0 = Just x
-ee (_:xs) n = ee xs (n-1)
+index' :: [a] -> Int -> Maybe a
+index' [] _ = Nothing
+index' (x:_) 0 = Just x
+index' (_:xs) n = ee xs (n-1)
 
 takeN :: Int -> [a] -> [a]
 takeN 0 _ = []
